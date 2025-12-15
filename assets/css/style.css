@@ -1060,24 +1060,44 @@ footer .logo { margin-bottom: 30px; }
 
 }
 
-/* LOGO RESPONSIVE */
+/*-----------------------------------*\
+ * #LOGO RESPONSIVE
+\*-----------------------------------*/
+
+/* Logo generale (sia header che footer) */
 .logo img {
-  width: 150px;      /* larghezza di base per desktop */
+  width: 150px;      /* larghezza base desktop */
   max-width: 100%;   /* non supera mai il container */
   height: auto;      /* mantiene proporzioni */
-  display: block;    /* rimuove eventuali spazi indesiderati */
+  display: block;
+}
+
+/* Header logo: puoi ridurlo un po' se serve */
+header .logo img {
+  width: 150px;
+}
+
+/* Footer logo: spesso più piccolo */
+footer .logo img {
+  width: 120px;
 }
 
 /* Tablet (larghezza schermo < 768px) */
 @media (max-width: 768px) {
-  .logo img {
+  header .logo img {
     width: 120px;
+  }
+  footer .logo img {
+    width: 100px;
   }
 }
 
 /* Mobile (larghezza schermo < 480px) */
 @media (max-width: 480px) {
-  .logo img {
+  header .logo img {
     width: 100px;
+  }
+  footer .logo img {
+    width: 80px;
   }
 }
