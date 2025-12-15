@@ -1059,3 +1059,25 @@ footer .logo { margin-bottom: 30px; }
   .features :is(.section-title, .section-text) { max-width: 850px; }
 
 }
+
+/* LOGO RESPONSIVE */
+.logo img {
+  width: 150px;      /* larghezza di base per desktop */
+  max-width: 100%;   /* non supera mai il container */
+  height: auto;      /* mantiene proporzioni */
+  display: block;    /* rimuove eventuali spazi indesiderati */
+}
+
+/* Tablet (larghezza schermo < 768px) */
+@media (max-width: 768px) {
+  .logo img {
+    width: 120px;
+  }
+}
+
+/* Mobile (larghezza schermo < 480px) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 100px;
+  }
+}
